@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kubernetes Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #F5F5F5;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #326CE5, #00BFA5);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .cta {
+      background: #FF7043;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      margin: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+    .card img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #326CE5;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #00BFA5;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kubernetes</h1>
+    <p>Orchestrate Your Containers with Confidence</p>
+    <button class="cta">Get Started</button>
+  </header>
+
+  <section class="features">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048943.png" alt="Scalability">
+      <h3>Scalability</h3>
+      <p>Scale applications seamlessly across clusters.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048919.png" alt="Resilience">
+      <h3>Resilience</h3>
+      <p>Self-healing and fault-tolerant deployments.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048926.png" alt="Automation">
+      <h3>Automation</h3>
+      <p>Automated rollouts, scaling, and monitoring.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Kubernetes Community</p>
+    <a href="#">Docs</a> | <a href="#">GitHub</a> | <a href="#">Blog</a>
+  </footer>
+
+</body>
+</html>

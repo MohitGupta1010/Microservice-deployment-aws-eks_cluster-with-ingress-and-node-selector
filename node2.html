@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kubernetes Platform</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      background-color: #f0f4f8;
+      color: #222;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(120deg, #326CE5, #00BFA5);
+      color: white;
+      padding: 60px 80px;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero-text h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .hero-text p {
+      font-size: 1.2em;
+      margin-top: 15px;
+    }
+    .hero img {
+      max-width: 40%;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Features Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 60px 80px;
+    }
+    .feature-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 30px;
+      transition: transform 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    .feature-card img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+    .feature-card h3 {
+      margin: 10px 0;
+      color: #326CE5;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #00BFA5;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Kubernetes Platform</h1>
+      <p>Deploy, scale, and manage containerized applications with ease.</p>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo">
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048943.png" alt="Cluster">
+      <h3>Cluster Management</h3>
+      <p>Efficiently manage nodes and workloads across environments.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048919.png" alt="Resilience">
+      <h3>High Availability</h3>
+      <p>Ensure uptime with self-healing and fault tolerance.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048926.png" alt="Automation">
+      <h3>Smart Automation</h3>
+      <p>Automated rollouts, scaling, and monitoring built-in.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048935.png" alt="Community">
+      <h3>Open Source Community</h3>
+      <p>Backed by a vibrant ecosystem of contributors worldwide.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Kubernetes Community</p>
+    <a href="#">Docs</a> | <a href="#">GitHub</a> | <a href="#">Blog</a>
+  </footer>
+
+</body>
+</html>

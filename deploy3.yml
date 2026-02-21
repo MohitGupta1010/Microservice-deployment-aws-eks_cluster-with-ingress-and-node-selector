@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: webpage3
+    type: frontend
+  name: webpage3
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: webpage3
+      type: frontend
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+       maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: webpage3
+        type: frontend
+    spec:
+      nodeSelector:
+         topology.kubernetes.io/zone: ap-south-1c
+      containers:
+      - image: docker.io/mohitgupta10/webpage3:v1
+        name: webpage3
+        ports:
+          - containerPort: 80
